@@ -1,0 +1,12 @@
+﻿<h1>PERSONEL EKLE</h1>
+
+@using (Html.BeginForm("Contact", "Home", FormMethod.Post))
+{
+
+    <input type="text" name="Name" placeholder="Personel Adı" />
+    <input type="text" name="Surname" placeholder="Personel Soyadı" />
+    <input type="number" name="Salary" placeholder="Maaşı" />
+    <input type="text" name="Department" placeholder="Departmanı" />
+    <input type="submit" value="GÖNDER" />
+    @Html.AntiForgeryToken()
+}

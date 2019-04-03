@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<select onchange="functdegistir(this)">
+    <option value="tr">TR</option>
+    <option value="en">EN</option>
+</select>
+<h2>MVC PROJEM</h2>
+<span class="tikla" onclick="functListEmployees()">TIKLA</span>
+<ul class="ulEmployees"></ul>
+<script>
+    function functdegistir(gonderen) {
+        location.href = "asd/" + $(gonderen).val()
+    }
+</script>
